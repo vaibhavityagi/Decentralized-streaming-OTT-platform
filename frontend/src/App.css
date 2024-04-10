@@ -1,0 +1,42 @@
+* {
+    font-Family: "Times New Roman";
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    /* background-color: #1E1E1E; */
+}
+
+/* .u:hover.underline {
+    transform-origin: bottom right;
+    transition: transform 0.s ease-in-out;
+    text-decoration: 2px underline #00A3FF;
+    text-underline-offset: 10px;
+    text-underline-position: left;
+    /* text-decoration-style: linear-gradient(180deg, rgba(41, 34, 88, 1), white); */
+
+
+.u {
+    color: white;
+    position: relative;
+    outline: 3px;
+    outline-offset: 10px;
+    transition: 0.2s;
+}
+
+.u::after {
+    content: "";
+    background-color: #00A3FF;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    height: 2px;
+    width: 0;
+    transition: 0.25s;
+
+}
+
+.u:hover::after,
+.u:focus::after {
+    background-color: #00A3FF;
+    width: 100%;
+}

@@ -2,10 +2,16 @@ require("dotenv").config();
 
 const mongoose = require("mongoose");
 
-mongoose
-  .connect("mongodb://localhost:27017/")
-  .then(() => console.log("Successful connection"))
-  .catch((err) => console.log(`Error: ${err}`));
+exports.connectMongoose = async () => {
+  await mongoose
+    .connect("mongodb://127.0.0.1:27017/web3OTT")
+    .then(() => {
+      console.log(" connection successful");
+    })
+    .catch((e) => {
+      console.log(" no connection");
+    });
+};
 
 const userSchema = new mongoose.Schema({
   email: {
@@ -35,7 +41,6 @@ const userSchema = new mongoose.Schema({
     enum: ["day", "month", "yearly"],
   },
 });
-const User = mongoose.model("User", userSchema);
 
 const videoSchema = new mongoose.Schema({
   title: { type: String, required: true },
@@ -46,9 +51,7 @@ const videoSchema = new mongoose.Schema({
   rating: { type: Number },
   cast: [{ type: String }],
 });
-const Video = mongoose.model("Video", videoSchema);
 
-module.exports = {
-  User,
-  Video,
-};
+
+exports.User = mongoose.model("User", userSchema);
+exports.Video = mongoose.model("Video", videoSchema);

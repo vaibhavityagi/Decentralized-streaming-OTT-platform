@@ -6,7 +6,6 @@ export default function Navbar({ isLoggedIn }) {
   const navigate = useNavigate();
   return (
     <div>
-      <div>I am the change</div>
       <div>Movies</div>
       <div>TV Shows</div>
       <div>Documentaries</div>

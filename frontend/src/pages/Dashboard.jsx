@@ -20,7 +20,6 @@ export default function Dashboard() {
         shows on demand.
       </Faq>
       <FreeTrial />
-      <FreeTrial />
     </div>
   );
 }

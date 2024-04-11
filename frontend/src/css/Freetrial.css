@@ -1,0 +1,30 @@
+.abc{
+    height: 100%;
+    width: auto;
+}
+.container{
+    border-radius: 12px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: aqua; */
+    background-image: url("bgfreetrial.png");
+    height: contain;
+    width: auto;
+    padding: auto;
+}
+.box-0{
+    font-size: larger;
+    color: #fff;
+    padding: 80px;
+    flex: 2;
+}
+.box-1{
+    color: #999999;
+    font-size: smaller;
+}
+.box-2{
+     margin-top: 80px;
+    padding: 0px;
+    flex: 0.5;
+}

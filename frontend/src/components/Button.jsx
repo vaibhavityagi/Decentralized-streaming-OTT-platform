@@ -1,3 +1,4 @@
+import "../css/Freetrial.css";
 export default function Button({ text, color, border }) {
   return (
     <button
@@ -9,6 +10,7 @@ export default function Button({ text, color, border }) {
         padding: "10px 10px",
         borderRadius: "5px",
         marginInlineEnd: "1rem",
+
       }}
     >
       {text}

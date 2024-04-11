@@ -1,13 +1,14 @@
 import Card from "../components/Card";
 import sp from "../assets/smartphone.png";
+// import "./App.css";
 
 export default function Login() {
   return (
     <div>
       <Card
-        type="devices"
-        heading="Smartphones"
-        body="In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface"
+        type="plan"
+        heading="Basic Plan"
+        body="Enjoy an extensive library of movies and shows, featuring a range of content, including recently released titles."
         price="99"
         icon={sp}
       />

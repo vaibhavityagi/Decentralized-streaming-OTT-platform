@@ -1,5 +1,6 @@
 import Card from "../components/Card";
 import Faq from "../components/Faq";
+import FreeTrial from "../components/FreeTrial";
 
 export default function Dashboard() {
   return (
@@ -16,6 +17,7 @@ export default function Dashboard() {
       <Faq open={true} question={"what is ott"} num={1}>
         I am the answer answer answer
       </Faq>
+      <FreeTrial />
     </div>
   );
 }

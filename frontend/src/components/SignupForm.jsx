@@ -21,14 +21,15 @@ const SignupForm = (props) => {
   });
 
   function changeHandler(event) {
-    setFormData([
-      (prev) => [
-        {
-          ...prev,
-          [event.target.name]: event.target.value,
-        },
-      ],
-    ]);
+    // setFormData([
+    //   (prev) => [
+    //     {
+    //       ...prev,
+    //       [event.target.name]: event.target.value,
+    //     },
+    //   ],
+    // ]);
+    // setFormData((prev) => )
   }
 
   function submitHandler(e) {

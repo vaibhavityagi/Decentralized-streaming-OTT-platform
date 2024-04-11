@@ -14,16 +14,18 @@ export default function Faq({ question, children, num, open }) {
   }
   return (
     <div className="faqq">
-      <div className="numm"><Number number={num} /></div>
-      <div>{question}</div>
-      <div onClick={showAnswer}>
-        {!isOpen ? (
-          <FontAwesomeIcon icon={faChevronDown} />
-        ) : (
-          <FontAwesomeIcon icon={faChevronUp} />
-        )}
+      <div className="quess">
+        <div className="numm"><Number number={num} /></div>
+        <div className="ques">{question}</div>
+        <div className="arrow" onClick={showAnswer}>
+          {!isOpen ? (
+            <FontAwesomeIcon icon={faChevronDown} />
+          ) : (
+            <FontAwesomeIcon icon={faChevronUp} />
+          )}
+        </div>
       </div>
-      {isOpen && <div>{children}</div>}
+      {isOpen && <div className="ans">{children}</div>}
     </div>
   );
 }

@@ -108,3 +108,18 @@ span {
     color: #999999;
     font-size: 22px;
 }
+
+/* faq */
+.faqq {
+    margin: 2rem;
+    display: flex;
+
+
+}
+
+.numm {
+    padding: 1rem;
+    background-color: #1F1F1F;
+    color: white;
+    border-radius: 8px;
+}

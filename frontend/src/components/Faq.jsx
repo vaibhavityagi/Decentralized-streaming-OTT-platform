@@ -13,8 +13,8 @@ export default function Faq({ question, children, num, open }) {
     setIsOpen((prev) => !prev);
   }
   return (
-    <div>
-      <Number number={num} />
+    <div className="faqq">
+      <div className="numm"><Number number={num} /></div>
       <div>{question}</div>
       <div onClick={showAnswer}>
         {!isOpen ? (

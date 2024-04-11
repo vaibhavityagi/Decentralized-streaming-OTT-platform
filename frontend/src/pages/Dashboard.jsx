@@ -1,7 +1,6 @@
 import FreeTrial from "../components/FreeTrial";
 import Card from "../components/Card";
 import Faq from "../components/Faq";
-import FreeTrial from "../components/FreeTrial";
 
 export default function Dashboard() {
   return (

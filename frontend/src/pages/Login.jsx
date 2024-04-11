@@ -2,6 +2,7 @@ import Card from "../components/Card";
 import sp from "../assets/smartphone.png";
 import Faq from "../components/Faq";
 import FreeTrial from "../components/FreeTrial";
+import About from "../components/About";
 
 export default function Login() {
   return (
@@ -15,8 +16,9 @@ export default function Login() {
       /> 
       <Faq open={false} question="Streamvibe?" num={1}>
         I am the answer, I am also the child
-      </Faq> */}
-      <FreeTrial />
+      </Faq> 
+      <FreeTrial /> */}
+      <About>this is about us</About>
     </div>
   );
 }

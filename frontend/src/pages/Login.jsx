@@ -5,7 +5,7 @@ import Template from "../components/Template";
 
 const Login = ({ setIsLoggedIn }) => {
   return (
-    <Template title="Sign In" formtype="login" setIsLoggedIn={setIsLoggedIn} />
+    <Template title="Log In" formtype="login" setIsLoggedIn={setIsLoggedIn} />
   );
 };
 

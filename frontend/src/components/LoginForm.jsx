@@ -75,7 +75,7 @@ const LoginForm = ({ setIsLoggedIn }) => {
         </p>
       </Link> */}
 
-        <Button text="Sign In"
+        <Button text="Log In"
           color="#00A3FF"
           border="1.5px solid #999999">
 

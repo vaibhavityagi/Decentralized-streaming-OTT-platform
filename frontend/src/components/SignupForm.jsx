@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-// import { toast } from "react-toastify";
+import { toast } from "react-toastify";
 import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 
@@ -20,27 +20,21 @@ const SignupForm = (props) => {
     plan: "",
   });
 
-  function changeHandler(event) {
-    // setFormData([
-    //   (prev) => [
-    //     {
-    //       ...prev,
-    //       [event.target.name]: event.target.value,
-    //     },
-    //   ],
-    // ]);
-    // setFormData((prev) => )
+  function changeHandler(evt) {
+    setFormData((oldData) => {
+      return { ...oldData, [evt.target.name]: evt.target.value };
+    });
   }
 
   function submitHandler(e) {
     e.preventDefault();
     if (formData.password !== formData.confirmPassword) {
-      // toast.error("Passwords do not match");
+      toast.error("Passwords do not match");
       return;
     }
 
     setIsLoggedIn(true);
-    // toast.success("Account Create");
+    toast.success("Account Created Successfully");
     const accountData = {
       ...formData,
     };

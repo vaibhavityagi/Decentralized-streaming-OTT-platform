@@ -2,17 +2,26 @@
 import { useState } from "react";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Login from "./pages/Login"
-import './App.css'
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import "./App.css";
 
 function App() {
-  const [isLoggedIn, setLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
     <>
       <BrowserRouter>
         <Navbar isLoggedIn={isLoggedIn}></Navbar>
         <Routes>
-          <Route path="/login" element={<Login />}></Route>
+          <Route
+            path="/login"
+            element={<Login setIsLoggedIn={setIsLoggedIn} />}
+          ></Route>
+
+          <Route
+            path="/signup"
+            element={<Signup setIsLoggedIn={setIsLoggedIn} />}
+          ></Route>
         </Routes>
       </BrowserRouter>
     </>

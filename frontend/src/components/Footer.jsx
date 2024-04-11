@@ -11,56 +11,69 @@ const footer = () => {
       <div className="sb_footer section_padding">
         <div className="sb_footer-links">
           <div className="sb_footer-links_div">
-            <h4>For Business</h4>
+            <h4>Home</h4>
             <a href="/employer">
-              <p>Employer</p>
+              <p>Categories</p>
             </a>
             <a href="/heakthplan">
-              <p>Health Plan</p>
+              <p>Devices</p>
             </a>
             <a href="/individual">
-              <p>Individual</p>
+              <p>FAQ</p>
             </a>
           </div>
 
           <div className="sb_footer-links_div">
-            <h4>Resources</h4>
+            <h4>Movies</h4>
             <a href="/resource">
-              <p>Resource center</p>
+              <p>Genres</p>
             </a>
             <a href="/resource">
-              <p>Testimonial</p>
+              <p>Trending</p>
             </a>
             <a href="/resource">
-              <p>STV</p>
+              <p>New Realease</p>
+            </a>
+            <a href="/resource">
+              <p>Popular</p>
             </a>
           </div>
 
           <div className="sb_footer-links_div">
-            <h4>Partner</h4>
-            <a href="/employer">
-              <p>Swing Tech</p>
-            </a>
-          </div>
-
-          <div className="sb_footer-links_div">
-            <h4>Company</h4>
+            <h4>Shows</h4>
             <a href="/about">
-              <p>About</p>
+              <p>Genres</p>
             </a>
             <a href="/press">
-              <p>Press</p>
+              <p>Trending</p>
             </a>
             <a href="/career">
-              <p>Career</p>
+              <p>New Release</p>
             </a>
             <a href="/contact">
-              <p>Contact</p>
+              <p>Popular</p>
             </a>
           </div>
 
           <div className="sb_footer-links_div">
-            <h4>Coming soon on</h4>
+            <h4>Support</h4>
+            <a href=""> ottwebsite@gmail.com</a>
+          </div>
+
+          <div className="sb_footer-links_div">
+            <h4>Subscription</h4>
+            <a href="/about">
+              <p>Plans</p>
+            </a>
+            <a href="/press">
+              <p>Features</p>
+            </a>
+          </div>
+
+
+
+          <div className="sb_footer-links_div">
+            <h4>Connect with Us</h4>
             <div className="socialmedia">
               <p>
                 <img src={fb} alt="" />
@@ -82,7 +95,7 @@ const footer = () => {
 
         <div className="sb_footer-below">
           <div className="sb_footer-copyright">
-            <p>@{new Date().getFullYear()} CodeInn. All right reserved.</p>
+            <p>@{new Date().getFullYear()} OttWebsite. All Rights reserved.</p>
           </div>
           <div className="sb_footer-below-links">
             <a href="/terms">
@@ -92,17 +105,12 @@ const footer = () => {
             </a>
             <a href="/privacy">
               <div>
-                <p>Privacy</p>
-              </div>
-            </a>
-            <a href="/security">
-              <div>
-                <p>Security</p>
+                <p>Privacy Policy</p>
               </div>
             </a>
             <a href="/cookie">
               <div>
-                <p>Cookie Declaration</p>
+                <p>Cookie Policy</p>
               </div>
             </a>
           </div>

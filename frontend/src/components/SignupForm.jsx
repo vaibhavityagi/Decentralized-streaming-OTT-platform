@@ -17,6 +17,7 @@ const SignupForm = (props) => {
     email: "",
     password: "",
     confirmPassword: "",
+    plan: "",
   });
 
   function changeHandler(event) {
@@ -65,10 +66,13 @@ const SignupForm = (props) => {
           onChange={changeHandler}
           value={FormData.firstName}
           name="userName"
-          className="bg-richblack-800 rounded-[0.75rem] w-full p-[12px] text-richblack-5"
+          id="userName"
         />
 
+        <br />
+
         <label htmlFor="email">Email</label>
+        <br />
         <input
           type="email"
           required
@@ -76,48 +80,63 @@ const SignupForm = (props) => {
           value={formData.email}
           onChange={changeHandler}
           name="email"
+          id="email"
         />
 
-        <div>
-          <label htmlFor="">Create Password</label>
-          <input
-            type={showCreatePass ? "text" : "password"}
-            required
-            placeholder="Enter Password"
-            onChange={changeHandler}
-            value={formData.password}
-            name="password"
-          />
-          <span onClick={() => setShowCreatePass(!showCreatePass)}>
-            {showCreatePass ? (
-              <AiOutlineEyeInvisible fontSize={24} fill="#AFB2BF" />
-            ) : (
-              <AiOutlineEye fontSize={24} fill="#AFB2BF" />
-            )}
-          </span>
+        <br />
 
-          <label htmlFor=""> </label>
+        <label htmlFor="password">Create Password</label>
+        <br />
+        <input
+          type={showCreatePass ? "text" : "password"}
+          required
+          placeholder="Enter Password"
+          onChange={changeHandler}
+          value={formData.password}
+          name="password"
+          id="password"
+        />
+        <span onClick={() => setShowCreatePass(!showCreatePass)}>
+          {showCreatePass ? (
+            <AiOutlineEyeInvisible fontSize={24} fill="#AFB2BF" />
+          ) : (
+            <AiOutlineEye fontSize={24} fill="#AFB2BF" />
+          )}
+        </span>
 
-          <input
-            type={showConfirmPass ? "text" : "password"}
-            required
-            placeholder="Confirm Password"
-            onChange={changeHandler}
-            value={formData.confirmPassword}
-            name="confirmPassword"
-          />
+        <br />
 
-          <span
-            onClick={() => setShowConfirmPass(!showConfirmPass)}
-            className="absolute right-3 top-[38px] cursor-pointer z-10"
-          >
-            {showConfirmPass ? (
-              <AiOutlineEyeInvisible fontSize={24} fill="#AFB2BF" />
-            ) : (
-              <AiOutlineEye fontSize={24} fill="#AFB2BF" />
-            )}
-          </span>
-        </div>
+        <label htmlFor="finalPassword">Confirm Password</label>
+        <br />
+        <input
+          type={showConfirmPass ? "text" : "password"}
+          required
+          placeholder="Confirm Password"
+          onChange={changeHandler}
+          value={formData.confirmPassword}
+          name="confirmPassword"
+          id="finalPassword"
+        />
+
+        <span onClick={() => setShowConfirmPass(!showConfirmPass)}>
+          {showConfirmPass ? (
+            <AiOutlineEyeInvisible fontSize={24} fill="#AFB2BF" />
+          ) : (
+            <AiOutlineEye fontSize={24} fill="#AFB2BF" />
+          )}
+        </span>
+
+        <br />
+
+        <label htmlFor="plan">Choose your plan</label>
+        <br />
+        <select name="plan" id="plan">
+          <option value="oneDay">One Day plan</option>
+          <option value="monthly">Monthly plan</option>
+          <option value="yearly">Yearly plan</option>
+        </select>
+
+        <br />
 
         <button>Create Account</button>
       </form>

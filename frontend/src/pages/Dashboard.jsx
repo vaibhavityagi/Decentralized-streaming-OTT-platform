@@ -1,3 +1,4 @@
+import FreeTrial from "../components/FreeTrial";
 import Card from "../components/Card";
 import Faq from "../components/Faq";
 import FreeTrial from "../components/FreeTrial";
@@ -14,9 +15,11 @@ export default function Dashboard() {
       >
         /month
       </Card>
-      <Faq open={true} question={"what is ott"} num={1}>
-        I am the answer answer answer
+      <Faq open={true} question={"What is StreamVibe?"} num={1}>
+        StreamVibe is a streaming service that allows you to watch movies and
+        shows on demand.
       </Faq>
+      <FreeTrial />
       <FreeTrial />
     </div>
   );

@@ -6,6 +6,7 @@ import {
 import { useState } from "react";
 import Number from "./Number";
 
+// eslint-disable-next-line react/prop-types
 export default function Faq({ question, children, num, open }) {
   const [isOpen, setIsOpen] = useState(open);
   function showAnswer() {

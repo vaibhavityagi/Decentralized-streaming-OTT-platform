@@ -92,7 +92,8 @@
 
 .butt {
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
+
     color: #FFFFFF;
     font-size: 20px;
 }

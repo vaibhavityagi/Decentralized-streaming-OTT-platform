@@ -14,7 +14,7 @@ export default function Card({ type, heading, body, icon, price }) {
         {type == "plan" ? (
           <div>
             <div className="pr">
-              {price}
+              ₹{price}
               <span style={{ color: "#999999", fontSize: "22px" }}>/month</span>
             </div>
             <div className="butt">

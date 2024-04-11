@@ -1,9 +1,12 @@
+/* eslint-disable react/prop-types */
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import { useState } from "react";
 import { toast } from "react-toastify";
 import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
-
+import "../App.css";
+import Button from "./Button";
 const SignupForm = (props) => {
   const setIsLoggedIn = props.setIsLoggedIn;
 
@@ -45,7 +48,7 @@ const SignupForm = (props) => {
   }
 
   return (
-    <div>
+    <div className="signnupform">
       <form onSubmit={submitHandler}>
         <label htmlFor="userName">Username*</label>
         <br />
@@ -128,7 +131,10 @@ const SignupForm = (props) => {
 
         <br />
 
-        <button>Create Account</button>
+        <Button className="butt" text="Create Account"
+          color="#00A3FF"
+          border="1.5px solid #999999">
+        </Button>
       </form>
     </div>
   );

@@ -1,13 +1,17 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import SignupForm from "./SignupForm";
 import LoginForm from "./LoginForm";
 import { FcGoogle } from "react-icons/fc";
+import "../App.css";
 
+// eslint-disable-next-line react/prop-types
 const Template = ({ title, formtype, setIsLoggedIn }) => {
   return (
     <div>
-      <div>
-        <h1>{title}</h1>
+      <h1 className="titlee">{title}</h1>
+      <div className="formmm">
+
 
         {formtype === "signup" ? (
           <SignupForm setIsLoggedIn={setIsLoggedIn} />

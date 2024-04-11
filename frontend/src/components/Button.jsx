@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "../css/Freetrial.css";
 export default function Button({ text, color, border }) {
   return (

@@ -12,7 +12,7 @@ export default function Navbar({ isLoggedIn }) {
         <a><div className="u">Documentaries</div></a>
       </div>
       <div className="websiteName">"Website Name"</div>
-      {isLoggedIn ? <input type="text" /> : null}
+      <div className="inputtt">{isLoggedIn ? <input type="text" /> : null}</div>
       {
         isLoggedIn ? (
           <div className="nav-profile">Profile</div>
@@ -22,7 +22,7 @@ export default function Navbar({ isLoggedIn }) {
               navigate("/login");
             }}
           >
-            Login
+            <a><div className="u">Login</div></a>
           </div>
         )
       }

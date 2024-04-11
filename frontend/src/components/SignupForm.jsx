@@ -44,13 +44,8 @@ const SignupForm = (props) => {
       ...formData,
     };
 
-    const finalData = {
-      ...accountData,
-      accountType,
-    };
     console.log("printing data");
-    console.log(finalData);
-
+    console.log(accountData);
     navigate("/dashboard");
   }
 

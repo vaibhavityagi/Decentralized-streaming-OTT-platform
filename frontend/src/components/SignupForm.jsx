@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-// import { toast } from "react-toastify";
+import { toast } from "react-toastify";
 import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 
@@ -17,30 +17,24 @@ const SignupForm = (props) => {
     email: "",
     password: "",
     confirmPassword: "",
-    plan: "",
+    plan: "oneDay",
   });
 
-  function changeHandler(event) {
-    // setFormData([
-    //   (prev) => [
-    //     {
-    //       ...prev,
-    //       [event.target.name]: event.target.value,
-    //     },
-    //   ],
-    // ]);
-    // setFormData((prev) => )
+  function changeHandler(evt) {
+    setFormData((oldData) => {
+      return { ...oldData, [evt.target.name]: evt.target.value };
+    });
   }
 
   function submitHandler(e) {
     e.preventDefault();
     if (formData.password !== formData.confirmPassword) {
-      // toast.error("Passwords do not match");
+      toast.error("Passwords do not match");
       return;
     }
 
     setIsLoggedIn(true);
-    // toast.success("Account Create");
+    toast.success("Account Created Successfully");
     const accountData = {
       ...formData,
     };
@@ -94,9 +88,9 @@ const SignupForm = (props) => {
         />
         <span onClick={() => setShowCreatePass(!showCreatePass)}>
           {showCreatePass ? (
-            <AiOutlineEyeInvisible fontSize={24} fill="#AFB2BF" />
+            <AiOutlineEyeInvisible fontSize={14} fill="#AFB2BF" />
           ) : (
-            <AiOutlineEye fontSize={24} fill="#AFB2BF" />
+            <AiOutlineEye fontSize={14} fill="#AFB2BF" />
           )}
         </span>
 
@@ -116,9 +110,9 @@ const SignupForm = (props) => {
 
         <span onClick={() => setShowConfirmPass(!showConfirmPass)}>
           {showConfirmPass ? (
-            <AiOutlineEyeInvisible fontSize={24} fill="#AFB2BF" />
+            <AiOutlineEyeInvisible fontSize={14} fill="#AFB2BF" />
           ) : (
-            <AiOutlineEye fontSize={24} fill="#AFB2BF" />
+            <AiOutlineEye fontSize={14} fill="#AFB2BF" />
           )}
         </span>
 
@@ -126,7 +120,7 @@ const SignupForm = (props) => {
 
         <label htmlFor="plan">Choose your plan</label>
         <br />
-        <select name="plan" id="plan">
+        <select name="plan" id="plan" onChange={changeHandler}>
           <option value="oneDay">One Day plan</option>
           <option value="monthly">Monthly plan</option>
           <option value="yearly">Yearly plan</option>

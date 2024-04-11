@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import "./App.css";
+import Test from "./pages/Test";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -22,6 +23,8 @@ function App() {
             path="/signup"
             element={<Signup setIsLoggedIn={setIsLoggedIn} />}
           ></Route>
+
+          <Route path="/test" element={<Test />}></Route>
         </Routes>
       </BrowserRouter>
     </>

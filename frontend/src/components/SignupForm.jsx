@@ -17,7 +17,7 @@ const SignupForm = (props) => {
     email: "",
     password: "",
     confirmPassword: "",
-    plan: "",
+    plan: "oneDay",
   });
 
   function changeHandler(evt) {
@@ -88,9 +88,9 @@ const SignupForm = (props) => {
         />
         <span onClick={() => setShowCreatePass(!showCreatePass)}>
           {showCreatePass ? (
-            <AiOutlineEyeInvisible fontSize={24} fill="#AFB2BF" />
+            <AiOutlineEyeInvisible fontSize={14} fill="#AFB2BF" />
           ) : (
-            <AiOutlineEye fontSize={24} fill="#AFB2BF" />
+            <AiOutlineEye fontSize={14} fill="#AFB2BF" />
           )}
         </span>
 
@@ -110,9 +110,9 @@ const SignupForm = (props) => {
 
         <span onClick={() => setShowConfirmPass(!showConfirmPass)}>
           {showConfirmPass ? (
-            <AiOutlineEyeInvisible fontSize={24} fill="#AFB2BF" />
+            <AiOutlineEyeInvisible fontSize={14} fill="#AFB2BF" />
           ) : (
-            <AiOutlineEye fontSize={24} fill="#AFB2BF" />
+            <AiOutlineEye fontSize={14} fill="#AFB2BF" />
           )}
         </span>
 
@@ -120,7 +120,7 @@ const SignupForm = (props) => {
 
         <label htmlFor="plan">Choose your plan</label>
         <br />
-        <select name="plan" id="plan">
+        <select name="plan" id="plan" onChange={changeHandler}>
           <option value="oneDay">One Day plan</option>
           <option value="monthly">Monthly plan</option>
           <option value="yearly">Yearly plan</option>

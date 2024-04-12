@@ -174,9 +174,9 @@ span {
 }
 
 .arrow {
-  text-align: right;
-  width: 3%;
-  height: fit-content;
+    text-align: right;
+    width: 3%;
+    height: fit-content;
 }
 
 /* sign-up */
@@ -218,6 +218,13 @@ span {
   width: 100%;
   padding-left: 0.3rem;
   text-align: left;
+    border-radius: 7px;
+    background-color: #303444;
+    border: transparent;
+    height: 30px;
+    width: 70%;
+    padding-left: 0.3rem;
+    text-align: left;
 }
 
 .formmm {

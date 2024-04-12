@@ -19,13 +19,15 @@ const Template = ({ title, formtype, setIsLoggedIn }) => {
           <LoginForm setIsLoggedIn={setIsLoggedIn} />
         )}
 
-        <div>
-          <div></div>
-          <p>OR</p>
+        <div className="flex w-full items-center my-4 gap-x-2">
+          <div className="h-[1px] w-full bg-richblack-700"></div>
+          <p className="text-richblack-700 font-medium leading-[1.375rem]">OR</p>
+          <div className="h-[1px] w-full bg-richblack-700"></div>
         </div>
 
-        <button>
-          <FcGoogle />
+
+        <button className="allbutton">
+          <FcGoogle/>
           {title} with Google
         </button>
       </div>

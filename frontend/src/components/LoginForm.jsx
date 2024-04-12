@@ -33,7 +33,7 @@ const LoginForm = ({ setIsLoggedIn }) => {
   }
 
   return (
-    <div className="loginnform">
+    <div>
       <form onSubmit={submitHandler}>
         <label htmlFor="email"> Email </label>
         <br />

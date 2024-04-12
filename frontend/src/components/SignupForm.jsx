@@ -5,7 +5,7 @@ import { useState } from "react";
 import { toast } from "react-toastify";
 import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
-import "../App.css";
+import "../css/template.css";
 import Button from "./Button";
 const SignupForm = (props) => {
   const setIsLoggedIn = props.setIsLoggedIn;
@@ -89,7 +89,7 @@ const SignupForm = (props) => {
           name="password"
           id="password"
         />
-        <span onClick={() => setShowCreatePass(!showCreatePass)}>
+        <span onClick={() => setShowCreatePass(!showCreatePass)} className="absolute right-3 top-[38px] cursor-pointer z-10">
           {showCreatePass ? (
             <AiOutlineEyeInvisible fontSize={14} fill="#AFB2BF" />
           ) : (
@@ -131,7 +131,7 @@ const SignupForm = (props) => {
 
         <br />
 
-        <Button className="butt" text="Create Account"
+        <Button text="Create Account"
           color="#00A3FF"
           border="1.5px solid #999999">
         </Button>

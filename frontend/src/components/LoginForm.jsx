@@ -5,7 +5,7 @@ import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 // eslint-disable-next-line no-unused-vars
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import "../App.css";
+import "../css/template.css";
 import Button from "./Button";
 
 const LoginForm = ({ setIsLoggedIn }) => {
@@ -34,7 +34,7 @@ const LoginForm = ({ setIsLoggedIn }) => {
 
   return (
     <div>
-      <form onSubmit={submitHandler}>
+      <form onSubmit={submitHandler} className="formheight">
         <label htmlFor="email"> Email </label>
         <br />
         <input
@@ -61,7 +61,7 @@ const LoginForm = ({ setIsLoggedIn }) => {
           onChange={changeHandler}
         />
 
-        <span onClick={() => setShowPassword((prev) => !prev)}>
+        <span onClick={() => setShowPassword((prev) => !prev)} className="absolute right-3 top-[38px] cursor-pointer z-10">
           {showPassword ? (
             <AiOutlineEyeInvisible fontSize={14} fill="#AFB2BF" />
           ) : (

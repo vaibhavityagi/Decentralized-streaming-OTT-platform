@@ -43,17 +43,29 @@
     font-size: 15px;
     background-color: #454c68;
     width: 40%;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
-    height: 50vh;
+    height: fit-content;
     /* align-items: center; */
   
     border-radius: 12px;
   }
 
   .formmm input {
+    border-radius: 7px;
+    background-color: #303444;
+    border: transparent;
+    height: 30px;
+    width: 100%;
+    padding-left: 0.3rem;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  
+  .formmm select {
     border-radius: 7px;
     background-color: #303444;
     border: transparent;
@@ -80,13 +92,13 @@
     align-items: center;
     justify-content: center;
     border-radius: 8px;
-    width: 30%;
+    width: 50%;
     font: medium;
     color:#00a3ff;
     border: 1px solid gray;
     row-gap: 2;
     position: relative;
-    left: 35%;
+    left: 25%;
   }
 
   .parentOr{
@@ -105,6 +117,7 @@
 .or{
     color:#00a3ff;
     font: medium;
+    margin-bottom: 10px;
   }
 
 .formheight{

@@ -1,3 +1,22 @@
+.Plan-main-heading {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.plan-heading {
+    font-size: 25px;
+    font-weight: bold;
+    color: #00a2ff;
+    margin-left: 10vh;
+}
+
+.plan-sub-heading {
+    margin-left: 10vh;
+    font-size: 15px;
+    color: #999999;
+    margin-bottom: 2rem;
+}
+
 .card-body {
     background-color: #1a1a1a;
     padding: 1rem;

@@ -9,15 +9,15 @@ export default function Landing() {
     <div>
       <Title />
       <About>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
+      "WEBSITE NAME" is an online video streaming 
+      platform which offers a variety of movies, 
+      TV shows, Web-series of different genres and
+       languages. You can also experience movie 
+       streaming in Full HD quality, without ads 
+       and with many more benefits by purchasing 
+       our premium plans. "WEBSITE NAME" offers a
+      user friendly interface which supports many
+       languages and  regional cinema.
       </About>
       <Faqs />
       <Plans />

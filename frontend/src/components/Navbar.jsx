@@ -12,20 +12,22 @@ export default function Navbar({ isLoggedIn }) {
         <a><div className="u">Documentaries</div></a>
       </div>
       <div className="websiteName">"Website Name"</div>
-      <div className="inputtt">{isLoggedIn ? <input type="text" /> : null}</div>
-      {
-        isLoggedIn ? (
-          <div className="nav-profile">Profile</div>
-        ) : (
-          <div
-            onClick={() => {
-              navigate("/login");
-            }}
-          >
-            <a><div className="u">Login</div></a>
-          </div>
-        )
-      }
+      <div className="nav-profile-s">
+        <div className="inputtt">{isLoggedIn ? <input type="text" /> : null}</div>
+        {
+          isLoggedIn ? (
+            <div>Profile</div>
+          ) : (
+            <div
+              onClick={() => {
+                navigate("/login");
+              }}
+            >
+              <a><div className="u">Login</div></a>
+            </div>
+          )
+        }
+      </div>
     </div >
   );
 }

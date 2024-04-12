@@ -1,6 +1,7 @@
 import FreeTrial from "../components/FreeTrial";
 import Card from "../components/Card";
 import Faq from "../components/Faq";
+import Title from "../components/Title";
 
 export default function Dashboard() {
   return (
@@ -19,6 +20,7 @@ export default function Dashboard() {
         shows on demand.
       </Faq>
       <FreeTrial />
+      <Title />
     </div>
   );
 }

@@ -14,9 +14,7 @@ export default function Button({ text, color, border, type = "noVideo" }) {
         justifyContent: "center",
         gap: "0.5rem",
         alignContent: "center",
-        textAlign: "center",
-        position: "relative",
-        left: "43%",
+
 
       }}
     >

@@ -1,0 +1,29 @@
+.container-0{
+    display: flex;
+    background-image: url("bgfreetrial.png");
+    background-size: 100% 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+.box-0{
+    font-size: xx-large;
+    justify-content: center;
+    padding-top: 400px;
+    padding-bottom: 0px;
+}
+.box-1{
+    color: #fff;
+    font-size: large;
+    padding: 10px;
+    align-items: center;
+
+}
+.box-2{
+    margin: 10px;
+    justify-content: center;
+    flex: 4;
+}
+/* .playicon{
+
+} */

@@ -14,11 +14,10 @@ export default function Button({
         color: "white",
         padding: "5px 10px 5px 10px",
         borderRadius: "5px",
-        marginInlineEnd: " 1rem",
         display: type == "noVideo" ? "block" : "flex",
-        justifyContent: "center",
+        justifyContent: type == "noVideo" ? "none" : "center",
         gap: type == "noVideo" ? "0rem" : "0.5rem",
-        alignContent: "center",
+        alignContent: type == "noVideo" ? "none" : "center",
         textAlign: "center",
       }}
     >

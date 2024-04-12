@@ -61,6 +61,7 @@
     width: 100%;
     padding-left: 0.3rem;
     text-align: left;
+    margin-bottom: 20px;
   }
 
   .formm label{
@@ -110,9 +111,14 @@
     height: 1000%;
 }
 
-/* .eye{
+.eye{
     position: absolute;
     cursor: pointer;
-    z-index: 10;
-} */
+    top: 30px;
+    right: 10px;
+    z-index: 1;
+}
 
+.outsideEye{
+  position: relative;
+}

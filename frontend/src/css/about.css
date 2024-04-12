@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 80px;
+}
+.head{
+    font-size: x-large;
+}
+.child{
+    width: 60%;
+    margin-top: 10px;
+    justify-content: center;
+}

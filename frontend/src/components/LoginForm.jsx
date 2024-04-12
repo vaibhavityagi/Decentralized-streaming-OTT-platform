@@ -61,7 +61,7 @@ const LoginForm = ({ setIsLoggedIn }) => {
           onChange={changeHandler}
         />
 
-        <span onClick={() => setShowPassword((prev) => !prev)} className="absolute right-3 top-[38px] cursor-pointer z-10">
+        <span onClick={() => setShowPassword((prev) => !prev)}>
           {showPassword ? (
             <AiOutlineEyeInvisible fontSize={14} fill="#AFB2BF" />
           ) : (

@@ -5,6 +5,7 @@ import {
 } from "@fortawesome/fontawesome-free-solid";
 import { useState } from "react";
 import Number from "./Number";
+import "../css/faq.css";
 
 // eslint-disable-next-line react/prop-types
 export default function Faq({ question, children, num, open }) {

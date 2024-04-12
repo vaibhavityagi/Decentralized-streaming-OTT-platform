@@ -11,6 +11,8 @@ body {
   color: white;
 }
 
+<<<<<<< HEAD
+=======
 /* navigation bar */
 .navbar {
   height: 100px;
@@ -174,29 +176,30 @@ span {
 }
 
 .arrow {
-  text-align: right;
-  width: 3%;
-  height: fit-content;
+    text-align: right;
+    width: 3%;
+    height: fit-content;
 }
 
+>>>>>>> 7414bc55102292f64903f6dae18491aba6fae65a
 /* sign-up */
 .titlee {
   /* text-align: center; */
   margin: 2rem;
   font-size: 30px;
   color: #ffffff;
+  align-items: center;
 }
 
-/* .signnupform {
-    margin: 2rem;
-    font-size: 15px;
-    background-color: #454C68;
-    width: fit-content;
-    height: auto;
-    text-align: left;
-    padding: 2rem;
-    align-content: center;
-    border-radius: 12px;
+
+/* .loginParentDiv{
+  display: flex;
+  width: 11/12;
+  max-width: 1160px;
+  margin: auto;
+  row-gap: 12px;
+  column-gap: 0;
+  justify-content: sp;
 } */
 
 .formmm input {
@@ -204,20 +207,57 @@ span {
   background-color: #303444;
   border: transparent;
   height: 30px;
-  width: 70%;
+  width: 100%;
   padding-left: 0.3rem;
   text-align: left;
+    border-radius: 7px;
+    background-color: #303444;
+    border: transparent;
+    height: 30px;
+    width: 70%;
+    padding-left: 0.3rem;
+    text-align: left;
 }
 
 .formmm {
+<<<<<<< HEAD
+    margin: 2rem;
+    font-size: 15px;
+    background-color: #454c68;
+    width: 30%;
+    height: auto;
+    text-align: left;
+    padding-left: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 12px;
+=======
   margin: 2rem;
   font-size: 15px;
   background-color: #454c68;
-  width: 30%;
+  width: 70%;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   height: auto;
-  text-align: left;
-  padding-left: 5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  /* text-align: left; */
+
   border-radius: 12px;
+}
+
+.allbutton{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  width: 30%;
+  font: medium;
+  color:#00a3ff;
+  border: 1px solid gray;
+  row-gap: 2;
+  position: relative;
+  left: 35%;
+>>>>>>> 7414bc55102292f64903f6dae18491aba6fae65a
 }

@@ -1,5 +1,5 @@
 import Faq from "./Faq";
-import "../App.css";
+import "../css/faq.css";
 
 export default function Faqs() {
   return (

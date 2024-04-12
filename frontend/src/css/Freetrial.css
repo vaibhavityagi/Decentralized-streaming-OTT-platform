@@ -1,8 +1,9 @@
-.abc{
+.abc {
     height: 100%;
     width: auto;
 }
-.container{
+
+.container0 {
     border-radius: 12px;
     margin: 20px;
     display: flex;
@@ -13,18 +14,21 @@
     width: auto;
     padding: auto;
 }
-.box-0{
+
+.box-00 {
     font-size: larger;
     color: #fff;
     padding: 80px;
     flex: 2;
 }
-.box-1{
+
+.box-01 {
     color: #999999;
     font-size: smaller;
 }
-.box-2{
-     margin-top: 80px;
+
+.box-02 {
+    margin-top: 80px;
     padding: 0px;
     flex: 0.5;
 }

@@ -1,4 +1,4 @@
-.container-0{
+.container-0 {
     display: flex;
     background-image: url("bgfreetrial.png");
     background-size: 100% 100%;
@@ -6,24 +6,31 @@
     flex-direction: column;
     align-items: center;
 }
-.box-0{
+
+.box-0 {
     font-size: xx-large;
     justify-content: center;
-    padding-top: 400px;
+    padding-top: 30vh;
     padding-bottom: 0px;
+    text-align: center;
+    flex: 0;
 }
-.box-1{
+
+.box-1 {
     color: #fff;
     font-size: large;
     padding: 10px;
     align-items: center;
 
+
 }
-.box-2{
+
+.box-2 {
     margin: 10px;
     justify-content: center;
-    flex: 4;
+    /* flex: 4; */
 }
+
 /* .playicon{
 
 } */

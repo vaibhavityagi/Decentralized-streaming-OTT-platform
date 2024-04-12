@@ -14,9 +14,10 @@ export default function Button({ text, color, border, type = "noVideo" }) {
         justifyContent: "center",
         gap: "0.5rem",
         alignContent: "center",
+        textAlign: "center",
       }}
     >
-      <div>{type == "video" ? <FaPlay /> : null} </div>
+      <div >{type == "video" ? <FaPlay /> : null} </div>
       <div>{text}</div>
     </button>
   );

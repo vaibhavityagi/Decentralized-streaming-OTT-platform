@@ -20,7 +20,7 @@
 .card1-details {
     color: #999999;
     padding: 1rem;
-    /* padding-left: 0; */
+    padding-left: 0;
     font-size: 14px;
     margin: 0;
 }
@@ -48,4 +48,5 @@ span {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
+    /* text-align: left; */
 }

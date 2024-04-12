@@ -49,25 +49,29 @@ const LoginForm = ({ setIsLoggedIn }) => {
 
         <br />
 
-        <label htmlFor="password">Password </label>
-        <br />
-        <input
-          required
-          type={showPassword ? "text" : "password"}
-          placeholder="Enter your password"
-          name="password"
-          id="password"
-          value={formData.password}
-          onChange={changeHandler}
-        />
+        <div className="outsideEye">
+          <label htmlFor="password">Password </label>
+          <br />
+          <input
+            required
+            type={showPassword ? "text" : "password"}
+            placeholder="Enter your password"
+            name="password"
+            id="password"
+            value={formData.password}
+            onChange={changeHandler}
+          />
 
-        <span onClick={() => setShowPassword((prev) => !prev)} className="absolute right-3 top-[38px] cursor-pointer z-10">
-          {showPassword ? (
-            <AiOutlineEyeInvisible fontSize={14} fill="#AFB2BF" />
-          ) : (
-            <AiOutlineEye fontSize={14} fill="#AFB2BF" />
-          )}
-        </span>
+          <span className="eye" onClick={() => setShowPassword((prev) => !prev)}>
+            {showPassword ? (
+              <AiOutlineEyeInvisible fontSize={14} fill="#AFB2BF" />
+            ) : (
+              <AiOutlineEye fontSize={14} fill="#AFB2BF" />
+            )}
+          </span>
+        </div>
+
+
 
         {/* <Link to="#">
         <p className="text-xs mt-1 text-blue-100 max-w-max ml-auto">

@@ -48,8 +48,8 @@ const SignupForm = (props) => {
   }
 
   return (
-    <div className="signnupform">
-      <form onSubmit={submitHandler}>
+    <div>
+      <form onSubmit={submitHandler} className="formheight">
         <label htmlFor="userName">Username*</label>
         <br />
         <input
@@ -76,50 +76,51 @@ const SignupForm = (props) => {
           id="email"
         />
 
-        <br />
+        <div className="outsideEye">
 
-        <label htmlFor="password">Create Password</label>
-        <br />
-        <input
-          type={showCreatePass ? "text" : "password"}
-          required
-          placeholder="Enter Password"
-          onChange={changeHandler}
-          value={formData.password}
-          name="password"
-          id="password"
-        />
-        <span onClick={() => setShowCreatePass(!showCreatePass)} className="absolute right-3 top-[38px] cursor-pointer z-10">
-          {showCreatePass ? (
-            <AiOutlineEyeInvisible fontSize={14} fill="#AFB2BF" />
-          ) : (
-            <AiOutlineEye fontSize={14} fill="#AFB2BF" />
-          )}
-        </span>
+          <label htmlFor="password">Create Password</label>
+          <br />
+          <input
+            type={showCreatePass ? "text" : "password"}
+            required
+            placeholder="Enter Password"
+            onChange={changeHandler}
+            value={formData.password}
+            name="password"
+            id="password"
+          />
+          <span className="eye" onClick={() => setShowCreatePass(!showCreatePass)}>
+            {showCreatePass ? (
+              <AiOutlineEyeInvisible fontSize={14} fill="#AFB2BF" />
+            ) : (
+              <AiOutlineEye fontSize={14} fill="#AFB2BF" />
+            )}
+          </span>
+        </div>
 
-        <br />
 
-        <label htmlFor="finalPassword">Confirm Password</label>
-        <br />
-        <input
-          type={showConfirmPass ? "text" : "password"}
-          required
-          placeholder="Confirm Password"
-          onChange={changeHandler}
-          value={formData.confirmPassword}
-          name="confirmPassword"
-          id="finalPassword"
-        />
+        <div className="outsideEye">
+          <label htmlFor="finalPassword">Confirm Password</label>
+          <br />
+          <input
+            type={showConfirmPass ? "text" : "password"}
+            required
+            placeholder="Confirm Password"
+            onChange={changeHandler}
+            value={formData.confirmPassword}
+            name="confirmPassword"
+            id="finalPassword"
+          />
 
-        <span onClick={() => setShowConfirmPass(!showConfirmPass)}>
-          {showConfirmPass ? (
-            <AiOutlineEyeInvisible fontSize={14} fill="#AFB2BF" />
-          ) : (
-            <AiOutlineEye fontSize={14} fill="#AFB2BF" />
-          )}
-        </span>
+          <span className="eye" onClick={() => setShowConfirmPass(!showConfirmPass)}>
+            {showConfirmPass ? (
+              <AiOutlineEyeInvisible fontSize={14} fill="#AFB2BF" />
+            ) : (
+              <AiOutlineEye fontSize={14} fill="#AFB2BF" />
+            )}
+          </span>
 
-        <br />
+        </div>
 
         <label htmlFor="plan">Choose your plan</label>
         <br />
@@ -128,8 +129,6 @@ const SignupForm = (props) => {
           <option value="monthly">Monthly plan</option>
           <option value="yearly">Yearly plan</option>
         </select>
-
-        <br />
 
         <Button text="Create Account"
           color="#00A3FF"

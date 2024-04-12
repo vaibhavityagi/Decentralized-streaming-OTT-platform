@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import "./App.css";
 import { useState } from "react";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
@@ -11,6 +10,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Footer from "./components/Footer";
 import Dashboard from "./pages/Dashboard";
+import Landing from "./pages/Landing";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -30,6 +30,7 @@ function App() {
           ></Route>
 
           <Route path="/dashboard" element={<Dashboard />}></Route>
+          <Route path="/" element={<Landing />}></Route>
         </Routes>
         <Footer />
         <ToastContainer />

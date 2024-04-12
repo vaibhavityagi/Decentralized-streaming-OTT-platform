@@ -1,3 +1,8 @@
 export default function About({ children }) {
-  return <div>{children}</div>;
+  return (
+    <div>
+      <h2>About Us</h2>
+      <div>{children}</div>
+    </div>
+  );
 }

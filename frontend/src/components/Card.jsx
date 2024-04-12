@@ -2,7 +2,7 @@ import Button from "./Button";
 import "../App.css";
 
 // eslint-disable-next-line react/prop-types
-export default function Card({ type, heading, body, icon, price }) {
+export default function Card({ type, heading, children, icon, price }) {
   return (
     <div className="whole-body">
       <div className="card-body">
@@ -10,7 +10,7 @@ export default function Card({ type, heading, body, icon, price }) {
           {type == "devices" ? <img src={icon} alt={heading} /> : null}
           <div className="card1-planname">{heading}</div>
         </div>
-        <div className="card1-details">{body}</div>
+        <div className="card1-details">{children}</div>
         {type == "plan" ? (
           <div>
             <div className="pr">

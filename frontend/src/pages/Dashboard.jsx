@@ -19,8 +19,6 @@ export default function Dashboard() {
         StreamVibe is a streaming service that allows you to watch movies and
         shows on demand.
       </Faq>
-      <FreeTrial />
-      <Title />
     </div>
   );
 }

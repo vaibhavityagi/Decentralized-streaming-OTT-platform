@@ -19,9 +19,7 @@ export default function Button({
         justifyContent: "center",
         gap: "0.5rem",
         alignContent: "center",
-        textAlign: "center",
-        position: "relative",
-        left: "43%",
+
 
       }}
     >

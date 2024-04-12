@@ -1,3 +1,22 @@
+.main-form-body {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.FAQ-HEADING {
+    font-size: 25px;
+    font-weight: bold;
+    color: #00a2ff;
+    margin-left: 10vh;
+}
+
+.sub-heading {
+    margin-left: 10vh;
+    font-size: 15px;
+    color: #999999;
+    margin-bottom: 2rem;
+}
+
 .f {
     display: flex;
     flex-wrap: wrap;
@@ -47,4 +66,5 @@ text-align: left; */
     text-align: right;
     width: 3%;
     height: fit-content;
+    cursor: pointer;
 }

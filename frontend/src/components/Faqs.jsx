@@ -3,9 +3,9 @@ import "../css/faq.css";
 
 export default function Faqs() {
   return (
-    <div>
-      <h3>Frequently Asked Questions</h3>
-      <p>Got questions? We have answers for you</p>
+    <div className="main-form-body">
+      <div className="FAQ-HEADING"><h3>FREQUENTLY ASKED QUESTIONS</h3></div>
+      <div className="sub-heading"><p>Got questions? We have answers for you</p></div>
       <div className="f">
         <div>
           <Faq

@@ -12,15 +12,14 @@ export default function Button({
         cursor: "pointer",
         backgroundColor: color,
         color: "white",
-        padding:"5px 10px 5px 10px",
+        padding: "5px 10px 5px 10px",
         borderRadius: "5px",
-        marginInlineEnd: "1rem",
-        display: "flex",
+        marginInlineEnd: " 1rem",
+        display: type == "noVideo" ? "block" : "flex",
         justifyContent: "center",
-        gap: "0.5rem",
+        gap: type == "noVideo" ? "0rem" : "0.5rem",
         alignContent: "center",
-
-
+        textAlign: "center",
       }}
     >
       <div>{type == "video" ? <FaPlay /> : null} </div>

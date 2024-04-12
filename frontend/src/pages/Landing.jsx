@@ -1,6 +1,7 @@
 import About from "../components/About";
 import Faqs from "../components/Faqs";
 import FreeTrial from "../components/FreeTrial";
+import Plans from "../components/Plans";
 import Title from "../components/Title";
 
 export default function Landing() {
@@ -19,6 +20,7 @@ export default function Landing() {
         of Lorem Ipsum.
       </About>
       <Faqs />
+      <Plans />
       <FreeTrial />
     </div>
   );

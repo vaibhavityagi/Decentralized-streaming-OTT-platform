@@ -2,7 +2,7 @@ import Button from "./Button";
 import "../App.css";
 
 // eslint-disable-next-line react/prop-types
-export default function Card({ type, heading, children, icon, price }) {
+export default function Card({ type, heading, children, icon, price, time }) {
   return (
     <div className="whole-body">
       <div className="card-body">
@@ -15,7 +15,9 @@ export default function Card({ type, heading, children, icon, price }) {
           <div>
             <div className="pr">
               ₹{price}
-              <span style={{ color: "#999999", fontSize: "22px" }}>/month</span>
+              <span style={{ color: "#999999", fontSize: "22px" }}>
+                /{time}
+              </span>
             </div>
             <div className="butt">
               <Button

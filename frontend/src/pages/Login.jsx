@@ -2,6 +2,7 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import Template from "../components/Template";
+import "../css/template.css";
 
 const Login = ({ setIsLoggedIn }) => {
   return (

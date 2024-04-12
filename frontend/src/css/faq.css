@@ -1,0 +1,46 @@
+.f {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    /* text-align: center; */
+    margin-left: 10vh;
+    row-gap: 2rem;
+    column-gap: 10dvb;
+}
+
+.quess {
+    margin-left: 2rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 620px;
+    height: 20%;
+}
+
+.ans {
+    margin-left: 5rem;
+    width: 580px;
+
+    color: #999999;
+}
+
+.numm {
+    padding: 1% 2%;
+    background-color: #1f1f1f;
+    color: white;
+    width: 7%;
+    border-radius: 8px;
+}
+
+.ques {
+    padding: 1rem;
+    color: #ffffff;
+    width: 90%;
+    text-align: left;
+}
+
+.arrow {
+    text-align: right;
+    width: 3%;
+    height: fit-content;
+}

@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/prop-types */
 import { useNavigate } from "react-router-dom";
-
+import "../css/navbar.css";
 export default function Navbar({ isLoggedIn }) {
   const navigate = useNavigate();
   return (

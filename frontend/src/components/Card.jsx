@@ -1,5 +1,5 @@
 import Button from "./Button";
-import "../App.css";
+import "../css/card.css";
 
 // eslint-disable-next-line react/prop-types
 export default function Card({ type, heading, children, icon, price, time }) {

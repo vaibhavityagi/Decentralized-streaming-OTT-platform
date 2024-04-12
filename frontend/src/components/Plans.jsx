@@ -1,5 +1,5 @@
 import Card from "./Card";
-import "../App.css";
+import "../css/card.css";
 
 export default function Plans() {
   return (

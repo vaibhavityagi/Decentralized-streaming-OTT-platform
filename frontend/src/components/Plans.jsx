@@ -3,12 +3,12 @@ import "../css/card.css";
 
 export default function Plans() {
   return (
-    <div>
-      <h3>Choose the plan that's right for you</h3>
-      <p>
+    <div className="Plan-main-heading">
+      <div className="plan-heading"><h3>CHOOSE YOUR PLAN</h3></div>
+      <div className="plan-sub-heading"><p>
         Join *** and select from our flexible subscription options tailored to
         suit your viewing preferences. Get ready for non-stop entertainment!
-      </p>
+      </p></div>
       <div className="card-plann">
         <div><Card type="plan" heading="Basic Plan" price={99} time="day">
           Enjoy an extensive library of movies and shows, featuring a range of

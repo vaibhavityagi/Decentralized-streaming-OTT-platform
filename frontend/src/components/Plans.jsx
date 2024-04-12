@@ -16,7 +16,7 @@ export default function Plans() {
         Access to a wider selection of movies and shows, including most new
         releases and exclusive content{" "}
       </Card>
-      <Card type="plan" heading="Basic Plan" price={1199} time="year">
+      <Card type="plan" heading="Premium Plan" price={1199} time="year">
         Access to a widest selection of movies and shows, including all new
         releases and Offline Viewing{" "}
       </Card>

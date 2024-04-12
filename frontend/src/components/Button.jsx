@@ -1,5 +1,10 @@
 import { FaPlay } from "react-icons/fa";
-export default function Button({ text, color, border, type = "noVideo" }) {
+export default function Button({
+  text,
+  color,
+  border = "none",
+  type = "noVideo",
+}) {
   return (
     <button
       style={{
@@ -17,7 +22,7 @@ export default function Button({ text, color, border, type = "noVideo" }) {
         textAlign: "center",
       }}
     >
-      <div >{type == "video" ? <FaPlay /> : null} </div>
+      <div>{type == "video" ? <FaPlay /> : null} </div>
       <div>{text}</div>
     </button>
   );

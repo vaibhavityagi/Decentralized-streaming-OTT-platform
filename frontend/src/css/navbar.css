@@ -54,7 +54,8 @@
 .websiteName {
     width: 50%;
     text-align: center;
-    font-size: 30px;
+    font-size: 50px;
+    font-weight: bolder;
     /* position: sticky; */
 }
 
@@ -65,4 +66,8 @@
     text-align: right;
     margin-left: auto;
     margin-right: auto;
+}
+.v{
+    color: #00a3ff;
+    font-size: 50px;
 }

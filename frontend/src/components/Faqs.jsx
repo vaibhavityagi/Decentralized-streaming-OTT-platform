@@ -13,23 +13,23 @@ export default function Faqs() {
             num={1}
             open={false}
           >
-            ***** is a streaming platform where you can watch movies and web
+            StreamVibe is a streaming platform where you can watch movies and web
             series as per your convenience without buying the monthy or yearly
             subscription. Just subscribe for a day or an hour!
           </Faq>
         </div>
         <div>
           <Faq
-            question="What content is available on *****"
+            question="What content is available on StreamVibe"
             num={2}
             open={false}
           >
-            You can watch anything and everything on **** starting only at ***
+            You can watch anything and everything on StreamVibe starting only at StreamVibe
           </Faq>
         </div>
         <div>
           <Faq
-            question="Is there any scheme of refund in *****"
+            question="Is there any scheme of refund in StreamVibe"
             num={3}
             open={false}
           >
@@ -39,12 +39,12 @@ export default function Faqs() {
         </div>
         <div>
           <Faq question="What are the subscription plans?" num={4} open={false}>
-            **********************
+            We have a per hour and a per day subscription plan. Buy according to your convenience.
           </Faq>
         </div>
         <div>
           <Faq question="How do I resolve my queries?" num={5} open={false}>
-            You can send a mail to us at ****@gmail.com
+            You can send a mail to us at streamvibe@gmail.com
           </Faq>
         </div>
         <div>

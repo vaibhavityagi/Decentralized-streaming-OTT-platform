@@ -57,7 +57,7 @@ const footer = () => {
 
           <div className="sb_footer-links_div">
             <h4>Support</h4>
-            <a href=""> ottwebsite@gmail.com</a>
+            <a href=""> streamvibe@gmail.com</a>
           </div>
 
           <div className="sb_footer-links_div">

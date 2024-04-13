@@ -15,7 +15,7 @@ export default function Navbar({ isLoggedIn }) {
           <div className="u">Documentaries</div>
         </a>
       </div>
-      <div className="websiteName">"Website Name"</div>
+      <div className="websiteName">Stream<span className="v">V</span>ibe</div>
       <div className="nav-profile-s">
         <div className="inputtt">
           {isLoggedIn ? <input type="text" /> : null}

@@ -9,13 +9,13 @@ export default function Landing() {
     <div>
       <Title />
       <About>
-      "WEBSITE NAME" is an online video streaming 
+      StreamVibe is an online video streaming 
       platform which offers a variety of movies, 
       TV shows, Web-series of different genres and
        languages. You can also experience movie 
        streaming in Full HD quality, without ads 
        and with many more benefits by purchasing 
-       our premium plans. "WEBSITE NAME" offers a
+       our premium plans. StreamVibe offers a
       user friendly interface which supports many
        languages and  regional cinemas.
       </About>

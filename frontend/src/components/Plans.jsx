@@ -6,7 +6,7 @@ export default function Plans() {
     <div className="Plan-main-heading">
       <div className="plan-heading"><h3>CHOOSE YOUR PLAN</h3></div>
       <div className="plan-sub-heading"><p>
-        Join *** and select from our flexible subscription options tailored to
+        Join StreamVibe and select from our flexible subscription options tailored to
         suit your viewing preferences. Get ready for non-stop entertainment!
       </p></div>
       <div className="card-plann">

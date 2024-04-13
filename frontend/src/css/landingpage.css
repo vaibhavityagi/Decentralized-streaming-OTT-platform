@@ -1,7 +1,7 @@
 .container-0 {
     display: flex;
-    background-image: url("bgfreetrial.png");
     background-size: 100% 100%;
+    background-image: url("bgfreetrial.png");
     height: 100vh;
     flex-direction: column;
     align-items: center;

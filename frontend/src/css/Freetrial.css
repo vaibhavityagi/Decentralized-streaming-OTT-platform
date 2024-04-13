@@ -9,10 +9,10 @@
     display: flex;
     justify-content: space-evenly;
     /* background-color: aqua; */
-    background-image: url("bgfreetrial.png");
     height: contain;
     width: auto;
     padding: auto;
+    background-image: url("bgfreetrial.png");
 }
 
 .box-00 {

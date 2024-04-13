@@ -16,7 +16,7 @@ export default function FreeTrial() {
 
         </div>
         <div className="box-02">
-          <Button text="Start a Free Trial" color={"#00A3FF"} />
+          <Button text="Start your Free Trial" color={"#00A3FF"} />
         </div>
       </div>
     </div>

@@ -9,6 +9,7 @@
 }
 
 .Movie-details {
+    direction: flex-block;
     align-content: center;
     /* margin: 4rem; */
     width: 880px;

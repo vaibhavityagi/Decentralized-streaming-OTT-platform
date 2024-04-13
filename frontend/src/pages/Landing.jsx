@@ -17,7 +17,7 @@ export default function Landing() {
        and with many more benefits by purchasing 
        our premium plans. "WEBSITE NAME" offers a
       user friendly interface which supports many
-       languages and  regional cinema.
+       languages and  regional cinemas.
       </About>
       <Faqs />
       <Plans />

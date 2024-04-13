@@ -9,10 +9,10 @@
     display: flex;
     justify-content: space-evenly;
     /* background-color: aqua; */
-    background-image: url("bgfreetrial.png");
     height: contain;
     width: auto;
     padding: auto;
+    background-image: url("bgfreetrial.png");
 }
 
 .box-00 {
@@ -29,6 +29,7 @@
 
 .box-02 {
     margin-top: 80px;
+    padding-right: 80px;
     /* padding: 0px;
     flex: 0.5; */
 }

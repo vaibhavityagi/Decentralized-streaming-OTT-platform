@@ -1,0 +1,14 @@
+.main-body{
+
+    margin: 2rem;
+}
+.bg-container{
+    background-image:url("kantara.png") ;
+    height: 400px;
+    width: 100%;
+}
+
+.kantara-icons{
+    display: flex;
+    gap:1rem;
+}

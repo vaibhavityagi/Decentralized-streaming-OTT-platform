@@ -4,7 +4,7 @@ export default function Button({
   color,
   border = "none",
   type = "noVideo",
-  align,
+  align="no",
   mright,
 }) {
   return (

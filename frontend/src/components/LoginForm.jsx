@@ -81,7 +81,9 @@ const LoginForm = ({ setIsLoggedIn }) => {
 
         <Button text="Log In"
           color="#00A3FF"
-          border="1.5px solid #999999">
+          border="1.5px solid #999999"
+          align="yes"
+          mright="no">
 
         </Button>
       </form></div>

@@ -16,6 +16,7 @@ export default function Title() {
           color="#00A3FF"
           border=""
           type="video"
+          align="no"
         />
       </div>
     </div>

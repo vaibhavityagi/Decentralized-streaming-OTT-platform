@@ -1,14 +1,37 @@
-.main-body{
-
+.main-body {
     margin: 2rem;
 }
-.bg-container{
-    background-image:url("kantara.png") ;
-    height: 400px;
-    width: 100%;
+
+.Movie-body {
+
+    align-content: center;
+    text-align: center;
+    justify-content: flex-end;
 }
 
-.kantara-icons{
+.movie-head {
+
+    margin-top: 15rem;
+    /* top: 50px; */
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.movie-desc {
+    font-size: ;
+    color: #999999;
+}
+
+.bg-container {
+    background-image: url("kantara.png");
+    height: 400px;
+    width: 100%;
+
+}
+
+.movie-icons {
     display: flex;
-    gap:1rem;
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
 }

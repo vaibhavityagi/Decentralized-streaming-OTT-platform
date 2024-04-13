@@ -1,4 +1,5 @@
 import React from "react";
+import "../css/profile.css";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -15,7 +16,7 @@ const ProfileComponents = ({heading,type,open}) => {
     
   return (
     <div>
-         <div>{heading}</div>
+         <div className="box-n">{heading}</div>
         <div onClick={showAnswer}>
           {/* {(type==yourPlan)?  (``):""}
                        */}

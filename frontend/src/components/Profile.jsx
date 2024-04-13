@@ -1,9 +1,10 @@
+import "../css/profile.css";
 import React from 'react'
 import ProfileComponents from './ProfileComponents';
 
 const Profile = () => {
   return (
-    <div>
+    <div className="box-n">
       <h1>Welcome to your Profile!</h1>
       <ProfileComponents heading="Your Plan" type="yourPlan" open={false}/>
       <ProfileComponents heading="Manage your plan" open={false}/>

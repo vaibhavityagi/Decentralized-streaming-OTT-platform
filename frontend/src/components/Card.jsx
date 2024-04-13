@@ -1,8 +1,16 @@
 import Button from "./Button";
 import "../css/card.css";
+import { useNavigate } from "react-router-dom";
 
 // eslint-disable-next-line react/prop-types
 export default function Card({ type, heading, children, icon, price, time }) {
+  const navigate = useNavigate();
+  function startFreeTrial() {
+    navigate("/login");
+  }
+  function choosePlan() {
+    console.log("hit");
+  }
   return (
     <div className="whole-body">
       <div className="card-body">
@@ -24,8 +32,14 @@ export default function Card({ type, heading, children, icon, price, time }) {
                 text="Start Free Trial"
                 color="#141414"
                 border="1.5px solid #999999"
+                onclick={startFreeTrial}
               ></Button>
-              <Button text="Choose Plan" color="#00A3FF" border="none" align="no"></Button>
+              <Button
+                text="Choose Plan"
+                color="#00A3FF"
+                border="none"
+                onclick={choosePlan}
+              ></Button>
             </div>
           </div>
         ) : null}

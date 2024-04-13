@@ -1,0 +1,41 @@
+.MoviesPlay-main-body {
+    display: flex;
+    margin: 5rem;
+    gap: 4rem;
+    padding: 4rem;
+    background-image: linear-gradient(to right, rgb(67, 58, 127), black, rgb(67, 58, 127));
+    border-radius: 12px;
+    box-shadow: 0 0 1px white, 0 0 3px white, 0 0 5px white;
+}
+
+.Movie-details {
+    align-content: center;
+    /* margin: 4rem; */
+    width: 880px;
+
+
+}
+
+.Movie-Poster img {
+    border-radius: 10px;
+    box-shadow: 0 0 1px white, 0 0 3px rgba(255, 255, 255, 0.493);
+}
+
+.Movie-details h2 {
+    font-size: 30px;
+}
+
+.Movie-details p {
+    color: #999999;
+
+    font-size: 20px;
+
+}
+
+.Movie-icons {
+    display: inline-flex;
+    margin-top: 1rem;
+    margin-left: 7px;
+    gap: 1rem;
+
+}

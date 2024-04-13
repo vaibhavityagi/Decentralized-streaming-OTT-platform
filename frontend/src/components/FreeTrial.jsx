@@ -9,7 +9,7 @@ export default function FreeTrial() {
       <div className="container0">
         <div className="box-00">
           <p>Start Your Free Trial Today</p>
-          <div className="box-01">
+        <div className="box-01">
             <p>This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe.</p>
           </div>
         </div>

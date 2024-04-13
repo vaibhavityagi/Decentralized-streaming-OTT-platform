@@ -18,8 +18,8 @@
 .box-00 {
     font-size: larger;
     color: #fff;
-    padding: 80px;
-    flex: 2;
+    padding: 70px;
+    /* flex: 2; */
 }
 
 .box-01 {

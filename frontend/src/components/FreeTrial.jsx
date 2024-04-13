@@ -12,8 +12,6 @@ export default function FreeTrial() {
           <div className="box-01">
             <p>This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe.</p>
           </div>
-
-
         </div>
         <div className="box-02">
           <Button text="Start a Free Trial" color={"#00A3FF"} align="no"/>

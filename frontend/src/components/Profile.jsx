@@ -1,18 +1,25 @@
-import "../css/profile.css";
-import React from 'react'
-import ProfileComponents from './ProfileComponents';
+import React from "react";
+import ProfileComponent from "./ProfileComponent";
+import { useNavigate } from "react-router-dom";
 
-const Profile = () => {
+const Profile = ({ plan = "this is your plan" }) => {
+  const navigate = useNavigate();
   return (
-    <div className="box-n">
-      <h1>Welcome to your Profile!</h1>
-      <ProfileComponents heading="Your Plan" type="yourPlan" open={false}/>
-      <ProfileComponents heading="Manage your plan" open={false}/>
-      <ProfileComponents heading="Edit profile" open={false}/>
-      <ProfileComponents heading="Payment history" open={false}/>
-      <ProfileComponents heading="Logouts" open={false}/>
+    <div className="m-16">
+      <ProfileComponent heading="Your Plan" type="yourPlan" open={false}>
+        {plan}
+      </ProfileComponent>
+      <ProfileComponent heading="Manage your plan"></ProfileComponent>
+      <ProfileComponent heading="Edit profile"></ProfileComponent>
+      <ProfileComponent heading="Payment history"></ProfileComponent>
+      <ProfileComponent
+        heading="Logout"
+        onclick={() => {
+          navigate("/");
+        }}
+      ></ProfileComponent>
     </div>
-  )
-}
+  );
+};
 
-export default Profile
+export default Profile;

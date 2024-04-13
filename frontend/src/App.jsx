@@ -8,6 +8,7 @@ import { ToastContainer } from "react-toastify";
 import Navbar from "./components/Navbar";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import PrivateRoute from "./components/PrivateRoute";
 import Footer from "./components/Footer";
 import Dashboard from "./pages/Dashboard";
 import Landing from "./pages/Landing";
@@ -29,7 +30,14 @@ function App() {
             element={<Signup setIsLoggedIn={setIsLoggedIn} />}
           ></Route>
 
-          <Route path="/dashboard" element={<Dashboard />}></Route>
+          <Route
+            path="/dashboard"
+            element={
+              <PrivateRoute isLoggedIn={isLoggedIn}>
+                <Dashboard />
+              </PrivateRoute>
+            }
+          ></Route>
           <Route path="/" element={<Landing />}></Route>
         </Routes>
         <Footer />

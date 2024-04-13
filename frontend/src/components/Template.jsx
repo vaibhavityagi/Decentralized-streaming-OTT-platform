@@ -4,19 +4,36 @@ import SignupForm from "./SignupForm";
 import LoginForm from "./LoginForm";
 import { FcGoogle } from "react-icons/fc";
 import "../css/template.css";
+import { Navigate, useNavigate } from "react-router-dom";
 
-// eslint-disable-next-line react/prop-types
 const Template = ({ title, formtype, setIsLoggedIn }) => {
+  const navigate = useNavigate();
   return (
     <div className="alignment">
-      <h1 className="titlee">{title}</h1>     
+      <h1 className="titlee">{title}</h1>
       <div className="formmm">
-
-
         {formtype === "signup" ? (
           <SignupForm setIsLoggedIn={setIsLoggedIn} />
         ) : (
           <LoginForm setIsLoggedIn={setIsLoggedIn} />
+        )}
+
+        {formtype == "signup" ? (
+          <button
+            onClick={() => {
+              return navigate("/login");
+            }}
+          >
+            Log In
+          </button>
+        ) : (
+          <button
+            onClick={() => {
+              return navigate("/signup");
+            }}
+          >
+            Sign Up
+          </button>
         )}
 
         <div className="parentOr">
@@ -25,9 +42,8 @@ const Template = ({ title, formtype, setIsLoggedIn }) => {
           <div className="line"></div>
         </div>
 
-
         <button className="googlebutton">
-          <FcGoogle/>
+          <FcGoogle />
           {title} with Google
         </button>
       </div>

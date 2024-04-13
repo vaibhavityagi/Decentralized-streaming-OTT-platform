@@ -17,24 +17,25 @@ const Template = ({ title, formtype, setIsLoggedIn }) => {
         ) : (
           <LoginForm setIsLoggedIn={setIsLoggedIn} />
         )}
-
-        {formtype == "signup" ? (
-          <button
-            onClick={() => {
-              return navigate("/login");
-            }}
-          >
-            Log In
-          </button>
-        ) : (
-          <button
-            onClick={() => {
-              return navigate("/signup");
-            }}
-          >
-            Sign Up
-          </button>
-        )}
+        <div className="button-other">
+          {formtype == "signup" ? (
+            <button
+              onClick={() => {
+                return navigate("/login");
+              }}
+            >
+              Already a User? Log In
+            </button>
+          ) : (
+            <button
+              onClick={() => {
+                return navigate("/signup");
+              }}
+            >
+              New User? Sign Up
+            </button>
+          )}
+        </div>
 
         <div className="parentOr">
           <div className="line"></div>

@@ -12,6 +12,7 @@ import PrivateRoute from "./components/PrivateRoute";
 import Footer from "./components/Footer";
 import Dashboard from "./pages/Dashboard";
 import Landing from "./pages/Landing";
+import ManageProfile from "./components/ManageProfile";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -28,6 +29,11 @@ function App() {
           <Route
             path="/signup"
             element={<Signup setIsLoggedIn={setIsLoggedIn} />}
+          ></Route>
+
+          <Route
+            path="/profile"
+            element={<ManageProfile/>}
           ></Route>
 
           <Route

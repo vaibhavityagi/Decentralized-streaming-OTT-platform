@@ -2,6 +2,10 @@ import { useEffect, useState } from "react";
 import Button from "./Button";
 import axios from "axios";
 import "../css/moviePlay.css";
+import { FaThumbsUp } from "react-icons/fa";
+import { FaPlus } from "react-icons/fa6";
+import { GiSpeaker } from "react-icons/gi";
+
 export default function MoviePlay({ name, description }) {
   const [result, setResult] = useState({});
   useEffect(() => {
@@ -22,9 +26,9 @@ export default function MoviePlay({ name, description }) {
         <p>{result.Plot}</p>
         <div className="Movie-icons">
           <Button text="Play Now" color="#00a3ff" type="video" />
-          <Button text="+" color="#99999973" border="1px solid white" />
-          <Button text="👍🏾" color="#99999973" border="1px solid white" />
-          <Button text="🔊" color="#99999973" border="1px solid white" />
+          <Button text={<FaPlus size="1rem"/>} color="#99999973" border="1px solid white" />
+          <Button text={<FaThumbsUp size="1.3rem"/>}  color="#99999973" border="1px solid white" />
+          <Button text={<GiSpeaker size="2rem"/>} color="#99999973" border="1px solid white" />
         </div>
       </div>
     </div>

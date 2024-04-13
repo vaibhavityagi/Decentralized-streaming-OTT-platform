@@ -9,7 +9,12 @@
 }
 
 .Movie-details {
-    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    /* direction: flex-block;
+    align-content: center; */
     /* margin: 4rem; */
     width: 880px;
 

@@ -1,7 +1,12 @@
 import "../css/landingpage.css";
 import Button from "./Button";
+import { useNavigate } from "react-router-dom";
 
 export default function Title() {
+  const navigate = useNavigate();
+  const handleClick = (e) => {
+    navigate("/login");
+  };
   return (
     <div className="container-0">
       <div className="box-0">
@@ -17,6 +22,7 @@ export default function Title() {
           border=""
           type="video"
           align="no"
+          onclick={handleClick}
         />
       </div>
     </div>

@@ -4,11 +4,13 @@ export default function Button({
   color,
   border = "none",
   type = "noVideo",
-  align="no",
+  align = "no",
   mright,
+  onclick,
 }) {
   return (
     <button
+      onClick={onclick}
       style={{
         border: border,
         cursor: "pointer",
@@ -20,9 +22,9 @@ export default function Button({
         display: type == "noVideo" ? "block" : "flex",
         justifyContent: "center",
         gap: type == "noVideo" ? "0rem" : "0.5rem",
-        position: align=="yes"? "relative" :"static",
-        marginLeft: align=="yes"? "6cm" :"auto",
-        right: mright=="yes"? "5%":"auto",
+        position: align == "yes" ? "relative" : "static",
+        marginLeft: align == "yes" ? "6cm" : "auto",
+        right: mright == "yes" ? "5%" : "auto",
         alignContent: "center",
         textAlign: "center",
       }}

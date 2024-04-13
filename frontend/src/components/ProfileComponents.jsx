@@ -6,33 +6,26 @@ import {
   faChevronDown,
 } from "@fortawesome/fontawesome-free-solid";
 
-const ProfileComponents = ({heading,type,open}) => {
-    const [isOpen, setIsOpen] = useState(open);
-    function showAnswer() {
-        setIsOpen((prev) => !prev);
-    }
+const ProfileComponents = ({ heading, type, open = "false" }) => {
+  const [isOpen, setIsOpen] = useState(open);
+  function showAnswer() {
+    setIsOpen((prev) => !prev);
+  }
 
-    
   return (
     <div>
-         <div>{heading}</div>
-        <div onClick={showAnswer}>
-          {/* {(type==yourPlan)?  (``):""}
-                       */}
-
-        {!isOpen ? (
+      <div>{heading}</div>
+      <div onClick={showAnswer}>
+        {type == "yourPlan" ? (
+          !isOpen ? (
             <FontAwesomeIcon icon={faChevronDown} />
           ) : (
             <FontAwesomeIcon icon={faChevronUp} />
-          )}
-      
-        </div>
-        
-
-        
+          )
+        ) : null}
+      </div>
     </div>
-    
-  )
-}
+  );
+};
 
-export default ProfileComponents
+export default ProfileComponents;

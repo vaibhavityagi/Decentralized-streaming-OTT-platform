@@ -12,7 +12,6 @@ import PrivateRoute from "./components/PrivateRoute";
 import Footer from "./components/Footer";
 import Dashboard from "./pages/Dashboard";
 import Landing from "./pages/Landing";
-// import ManageProfile from "./components/ProfileComponents";
 import Profile from "./components/Profile";
 
 function App() {
@@ -32,10 +31,7 @@ function App() {
             element={<Signup setIsLoggedIn={setIsLoggedIn} />}
           ></Route>
 
-          <Route
-            path="/profile"
-            element={<Profile/>}
-          ></Route>
+          <Route path="/profile" element={<Profile />}></Route>
 
           <Route
             path="/dashboard"

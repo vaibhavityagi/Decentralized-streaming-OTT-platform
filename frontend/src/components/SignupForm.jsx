@@ -132,7 +132,9 @@ const SignupForm = (props) => {
 
         <Button text="Create Account"
           color="#00A3FF"
-          border="1.5px solid #999999">
+          border="1.5px solid #999999"
+          align="yes"
+          mright="yes">
         </Button>
       </form>
     </div>

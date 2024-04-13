@@ -25,7 +25,7 @@ export default function Card({ type, heading, children, icon, price, time }) {
                 color="#141414"
                 border="1.5px solid #999999"
               ></Button>
-              <Button text="Choose Plan" color="#00A3FF" border="none"></Button>
+              <Button text="Choose Plan" color="#00A3FF" border="none" align="no"></Button>
             </div>
           </div>
         ) : null}

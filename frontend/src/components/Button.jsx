@@ -4,6 +4,8 @@ export default function Button({
   color,
   border = "none",
   type = "noVideo",
+  align,
+  mright,
 }) {
   return (
     <button
@@ -14,10 +16,14 @@ export default function Button({
         color: "white",
         padding: "5px 10px 5px 10px",
         borderRadius: "5px",
+        marginInlineEnd: " 1rem",
         display: type == "noVideo" ? "block" : "flex",
-        justifyContent: type == "noVideo" ? "none" : "center",
+        justifyContent: "center",
         gap: type == "noVideo" ? "0rem" : "0.5rem",
-        alignContent: type == "noVideo" ? "none" : "center",
+        position: align=="yes"? "relative" :"static",
+        marginLeft: align=="yes"? "6cm" :"auto",
+        right: mright=="yes"? "5%":"auto",
+        alignContent: "center",
         textAlign: "center",
       }}
     >

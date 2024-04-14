@@ -10,7 +10,10 @@ const Profile = ({ plan = "this is your plan" }) => {
         {plan}
       </ProfileComponent>
       <ProfileComponent heading="Manage your plan"></ProfileComponent>
-      <ProfileComponent heading="Edit profile"></ProfileComponent>
+      <ProfileComponent
+        heading="Edit profile"
+        onclick={() => navigate("/edit")}
+      ></ProfileComponent>
       <ProfileComponent heading="Payment history"></ProfileComponent>
       <ProfileComponent
         heading="Logout"

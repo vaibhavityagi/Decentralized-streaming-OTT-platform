@@ -10,15 +10,15 @@ export default function Plans() {
         suit your viewing preferences. Get ready for non-stop entertainment!
       </p></div>
       <div className="card-plann">
-        <div><Card type="plan" heading="Basic Plan" price={99} time="day">
+        <div><Card type="plan" heading="Basic Plan" price={3} time="hour">
           Enjoy an extensive library of movies and shows, featuring a range of
           content, including recently released titles.
         </Card></div>
-        <div><Card type="plan" heading="Standard Plan" price={199} time="month">
+        <div><Card type="plan" heading="Standard Plan" price={20} time="day">
           Access to a wider selection of movies and shows, including most new
           releases and exclusive content{" "}
         </Card></div>
-        <div><Card type="plan" heading="Premium Plan" price={1199} time="year">
+        <div><Card type="plan" heading="Premium Plan" price={30} time="day">
           Access to a widest selection of movies and shows, including all new
           releases and Offline Viewing{" "}
         </Card></div>

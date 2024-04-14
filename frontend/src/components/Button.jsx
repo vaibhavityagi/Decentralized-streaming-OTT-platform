@@ -16,7 +16,7 @@ export default function Button({
         cursor: "pointer",
         backgroundColor: color,
         color: "white",
-        padding: "5px 10px 5px 10px",
+        padding: "10px 10px 10px 10px",
         borderRadius: "5px",
         marginInlineEnd: " 1rem",
         display: type == "noVideo" ? "block" : "flex",
@@ -27,6 +27,7 @@ export default function Button({
         right: mright == "yes" ? "5%" : "auto",
         alignContent: "center",
         textAlign: "center",
+        alignItems: "center",
       }}
     >
       <div>{type == "video" ? <FaPlay /> : null} </div>

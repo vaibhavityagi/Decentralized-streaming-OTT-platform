@@ -13,6 +13,7 @@ import Footer from "./components/Footer";
 import Dashboard from "./pages/Dashboard";
 import Landing from "./pages/Landing";
 import Profile from "./components/Profile";
+import EditProfile from "./pages/EditProfile";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -32,6 +33,8 @@ function App() {
           ></Route>
 
           <Route path="/profile" element={<Profile />}></Route>
+
+          <Route path="/edit" element={<EditProfile />}></Route>
 
           <Route
             path="/dashboard"
